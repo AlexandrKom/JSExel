@@ -1,0 +1,29 @@
+{
+  "name": "jsexel",
+  "version": "1.0.0",
+  "description": "SJ Exel app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandrKom/JSExel.git"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Alexandr Kom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandrKom/JSExel/issues"
+  },
+  "homepage": "https://github.com/AlexandrKom/JSExel#readme",
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
