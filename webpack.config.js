@@ -1,10 +1,11 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
-let mode = "development";
+let mode = 'development';
 
 if (process.env.NODE_ENV === 'production') {
-    mode = 'production'
-}
+        mode = 'production'
+    }
 
 module.exports = {
     mode: mode,
@@ -18,14 +19,12 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
+                use: ["babel-loader"]
             }
         ]
     },
 
-    plugins: [new MiniCssExtractPlugin()],
+    plugins: [new MiniCssExtractPlugin(), new ESLintPlugin()],
 
     devtool: "source-map",
     devServer: {

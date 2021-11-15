@@ -1,3 +1,4 @@
-import "./styles/index.scss"
+import './styles/index.scss';
+const z = 'Its working';
 
-console.log('Its working');
+console.log(z);
